@@ -1,0 +1,54 @@
+/* Styles go here */
+
+/* PRINT STYLES */
+@media print { 
+    /* usage of !important hard overwrites, because UI5 uses inline style directives (style="width:990px")  */
+    
+    /* define print page default settings */
+    @page {
+        size: portrait;
+        margin: 1.5cm 1cm;
+    }
+    
+    /* scale content to fit print page */
+    html, body {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* reset body */
+    body {
+        margin: 0;
+        padding: 0;
+        float: none; 
+        color: #000;
+    }
+    
+    /* helper class to allow selective hiding elements from printing (ex print button)  */
+    .uoNoPrint {
+        display: none;
+    }    
+    
+    /* fix overflow scrolling */
+    * {
+        overflow-x: visible !important; 
+        overflow-y: visible !important;
+    }
+    
+    /* auto expand collapsed panel contents */
+    .sapMPanelExpandablePart {
+        display: block !important;
+    }
+    
+    /* disable panel content border */
+    .sapMPanelContent {
+        border: 0 !important;
+    }
+    
+    /* reset flexed textareas height */ 
+    .sapMTextArea>.sapMTextAreaInner {
+        height: auto !important;
+    }
+    
+    /* custom css prototypes for addtional used containers */
+}

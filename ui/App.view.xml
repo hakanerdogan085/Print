@@ -1,0 +1,202 @@
+<mvc:View controllerName="ui.App" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App>
+    <Page 
+      id="page" 
+      title="UI5 Print Demo"
+      class="sapUiContentPadding">
+      <Panel
+        headerText="Panel (FlexBox SpaceBetween)"
+        expandable="true"
+        expanded="false">
+        <HBox justifyContent="SpaceBetween">
+          <Text text="Flex Item 1" />
+          <Text text="Flex Item 2" />  
+        </HBox>
+      </Panel>
+      <List headerText="List" >
+        <GroupHeaderListItem
+          title="Group Header List Item" />
+        <StandardListItem 
+          title="List item 1" 
+          description="Description 1"
+          icon="http://4.bp.blogspot.com/-y_GiBxFhXL0/VDJHvXxuF7I/AAAAAAAAA0g/GVlktggj364/s1600/OpenUI5%2BDeveloper%2BBlog%2BHeader.png"
+          iconDensityAware="false" />
+      </List>
+      <Table id="table">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table>      
+     <Table id="table2">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table>      
+     
+     <Table id="table3">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table>      
+     <Table id="table4">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table> 
+      <Table id="table5">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table> 
+      <Table id="table6">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table> 
+      <Table id="table7">
+        <headerToolbar>
+          <Toolbar>
+            <Text text="Responsive Table" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column
+            width="12em">
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="Cell 1,1" />
+            <Text text="Cell 1,2" />
+          </ColumnListItem>
+        </items>
+      </Table> 
+     
+     
+      <footer>
+        <Toolbar>
+          <ToolbarSpacer />
+          <Button
+            press="onPrint"
+            text="Print"
+            icon="sap-icon://print"
+            type="Emphasized" />
+          <Button
+            press="onPrint"
+            text="Print Table"
+            data:targetId="table"
+            icon="sap-icon://print"/>
+        </Toolbar>
+      </footer>
+    </Page>
+  </App>
+</mvc:View>
